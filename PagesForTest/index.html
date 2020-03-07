@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		
+		td {
+			width: 17%;
+			height: auto;
+		}
+
+		#idSubmitBtn {
+			background-color: gold;
+			box-shadow: black 1px 2px 2px 2px;
+			border-radius: 5px;
+			width: 10%;
+			height: 20%;
+			font-weight: bold;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+	</style>
+</head>
+<body data-spy="scroll" data-target=".sectionHeader" data-offset="50">
+
+<div class="container-fluid">
+	<h1 align="center">Details</h1>
+	<table id="idTable" class="table table-striped">
+
+			<tr id="idRow">
+
+				<td align="center">
+					<label>1st: </label>
+				</td>
+
+				<td align="left">
+					<input id="idFirstRadio" type = 'radio' name = 'firstRadio' />
+				</td>
+
+				<td align="left">
+					<p id="pIdOne">None</p>
+				</td>
+
+				<td align="center">
+					<label>2nd: </label>
+				</td>
+
+				<td align="left">
+					<input id="idSecondRadio" type = 'radio' name = 'secondRadio' />
+				</td>
+
+				<td align="left">
+					<p id="pIdTwo">None</p>
+				</td>
+			</tr>
+
+		<tr id="idRowSecond">
+
+			<td align="center">
+				<label>3rd: </label>
+			</td>
+
+			<td align="left">
+				<input id="idSecondFirstRadio" type = 'radio' name = 'secondfirstRadio' />
+			</td>
+
+			<td align="left">
+				<p id="pIdSecondOne">None</p>
+			</td>
+
+
+			<td align="center">
+				<label>4th: </label>
+			</td>
+
+			<td align="left">
+				<input id="idSecondSecondRadio" type = 'radio' name = 'secondSecondRadio' />
+			</td>
+
+			<td align="left">
+				<p id="pIdSecondTwo">None</p>
+			</td>
+		</tr>
+
+		<tr id="idRowThird">
+
+			<td align="center">
+				<label>5th: </label>
+			</td>
+
+			<td align="left">
+				<input id="idThirdFirstRadio" type = 'radio' name = 'thirdfirstRadio' />
+			</td>
+
+			<td align="left">
+				<p id="pIdThirdOne">None</p>
+			</td>
+
+			<td align="center">
+				<label>6th: </label>
+			</td>
+
+			<td align="left">
+				<input id="idThirdSecondRadio" type = 'radio' name = 'thirdSecondRadio' />
+			</td>
+
+			<td align="left">
+				<p id="pIdThirdTwo">None</p>
+			</td>
+		</tr>
+
+		<tr id="idRowFourth">
+
+			<td align="center">
+				<label>7th: </label>
+			</td>
+
+			<td align="left">
+				<input id="idFourthFirstRadio" type = 'radio' name = 'fourthfirstRadio' />
+			</td>
+
+			<td align="left">
+				<p id="pIdFourthOne">None</p>
+			</td>
+
+			<td align="center">
+				<label>8th: </label>
+			</td>
+
+			<td align="left">
+				<input id="idFourthSecondRadio" type = 'radio' name = 'fourthSecondRadio' />
+			</td>
+
+			<td align="left">
+				<p id="pIdFourthTwo">None</p>
+			</td>
+		</tr>
+
+	</table>
+
+	<div align="center" class="jumbotron">
+		<input id="idSubmitBtn" type="submit" name="submit" value="Submit">
+	</div>
+
+	<div class="sectionHeader navbar navbar-default" style="background-color: yellow;">
+		<ul class="nav navbar-nav">
+			<li><a href="#sectionOne">First</a></li>
+			<li><a href="#sectionTwo">Second</a></li>
+			<li><a href="#sectionThree">Third</a></li>			
+		</ul>
+	</div>
+
+	<div id="sectionOne" style="background-color: red; margin-bottom: 10%; height: 300px;">
+			<li><a href="#">First1</a></li>
+			<li><a href="#">Second1</a></li>
+			<li><a href="#">Third1</a></li>			
+
+	</div>
+
+	<div id="sectionTwo" style="background-color: purple; margin-bottom: 10%; height: 300px;">
+			<li><a href="#">First2</a></li>
+			<li><a href="#">Second2</a></li>
+			<li><a href="#">Third2</a></li>			
+	</div>
+
+	<div id="sectionThree" style="background-color: olive; margin-bottom: 10%; height: 300px;">
+			<li><a href="#">First3</a></li>
+			<li><a href="#">Second3</a></li>
+			<li><a href="#">Third3</a></li>			
+	</div>
+
+</div>
+
+  <div id="rootParent" class="panel-group container-fluid">
+	  <div class="panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		  <div class="panel panel-heading">
+		  	<h1 class="panel-title">
+		  		<a href="#divTwo" data-toggle="collapse" data-parent="rootParent">Toggle<span id="idSpanIcon" class="glyphicon glyphicon-plus pull-right"></span></a>
+		  	</h1>
+		  </div>
+	  	
+		  <div id="divTwo" class="panel-collapse collapse" style="width: 100%;">
+			  		<p style="width: 100%; overflow-x: hidden;">sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf</p>
+		  </div>
+
+	  </div>
+  	
+  </div>
+
+<div align="center">
+<h1 type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#idModal">
+	Get Popover
+</h1>
+</div>
+<div id="idModal" class="modal fade" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-toggle="modal" data-target="#idModal">
+					&times;
+				</button>				
+			</div>
+
+			<div class="modal-body">
+				<p>Test</p>
+			</div>
+
+			<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">
+						Exit
+					</button>				
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="container mt-3">
+  <h2>Filterable Table</h2>
+  <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+		var bFlag = false;
+
+		$("a").click(function(event) {
+			$('html, body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 900, function() {});
+		});
+
+
+
+		$("#idSpanIcon").click(function() {
+			bFlag = !bFlag;
+			if(bFlag) {
+				rotateAnimation(360);	
+			} else {
+				rotateAnimation(-360);
+			}
+			
+		});
+
+
+	  	$("#myInput").on("keyup", function() {
+	  		var enteredText = $(this).val().toLowerCase();
+	  		$("#myTable tr").filter(function() {
+	  			$(this).toggle($(this).text().toLowerCase().indexOf(enteredText) > -1)
+	  		});
+	  	});
+
+
+	});	
+</script>
+
+<script type="text/javascript">
+	
+var idTableForElements = $("#idTable");
+
+// First Tuple
+var idRowForElements = $("#idRow");
+var idRadioFirst = $("#idFirstRadio");
+var idRadioSecond = $("#idSecondRadio");
+var idParagraphOne = $("#pIdOne");
+var idParagraphTwo = $("#pIdTwo");
+
+// Second Tuple
+var idSecondRowElements = $("#idRowSecond");
+var idRadioSecondFirst = $("#idSecondFirstRadio");
+var idRadioSecondSecond = $("#idSecondSecondRadio");
+var idParagraphSecondOne = $("#pIdSecondOne");
+var idParagraphSecondTwo = $("#pIdSecondTwo");
+
+// Third Tuple
+var idThirdRowElements = $("#idRowThird");
+var idRadioThirdFirst = $("#idThirdFirstRadio");
+var idRadioThirdSecond = $("#idThirdSecondRadio");
+var idParagraphThirdOne = $("#pIdThirdOne");
+var idParagraphThirdTwo = $("#pIdThirdTwo");
+
+// Fourth Tuple
+var idFourthRowElements = $("#idRowFourth");
+var idRadioFourthFirst = $("#idFourthFirstRadio");
+var idRadioFourthSecond = $("#idFourthSecondRadio");
+var idParagraphFourthOne = $("#pIdFourthOne");
+var idParagraphFourthTwo = $("#pIdFourthTwo");
+
+var arrElements1 = [
+						"A", 
+						"B", 
+						"C", 
+						"D", 
+						"E"
+					];
+
+
+var arrElements2 = [
+						"A1", 
+						"B1", 
+						"C1", 
+						"D1", 
+						"E1"
+					];
+
+var contentValue = [
+						"One", 
+						"Two", 
+						"Three", 
+						"Four", 
+						"Five"
+					];					
+
+
+var contentValue2 = [
+						"One2", 
+						"Two2", 
+						"Three2", 
+						"Four2", 
+						"Five2"
+					];	
+
+
+var contentValue3 = [
+						"One3", 
+						"Two3", 
+						"Three3", 
+						"Four3", 
+						"Five3"
+					];						
+
+
+var contentValue4 = [
+						"One4", 
+						"Two4", 
+						"Three4", 
+						"Four4", 
+						"Five4"
+					];	
+
+	$(document).ready(function() {
+
+		$("input[type='radio'][name='firstRadio']").change(function() {
+			idParagraphOne.text(contentValue[0]);
+			idParagraphTwo.text("");
+			idRadioSecond.prop('checked', false);
+			$(this).off('click');
+
+		});
+
+		$("input[type='radio'][name='secondRadio']").change(function() {
+			idParagraphTwo.text(contentValue[1]);
+			idParagraphOne.text("");
+			idRadioFirst.prop('checked', false);
+			$(this).off('click');
+		});
+
+		$("input[type='radio'][name='secondfirstRadio']").change(function() {
+			idParagraphSecondOne.text(contentValue2[0]);
+			idParagraphSecondTwo.text("");
+			idRadioSecondSecond.prop('checked', false);
+			$(this).off('click');
+
+		});
+
+		$("input[type='radio'][name='secondSecondRadio']").change(function() {
+			idParagraphSecondTwo.text(contentValue2[1]);
+			idParagraphSecondOne.text("");
+			idRadioSecondFirst.prop('checked', false);
+			$(this).off('click');
+		});
+
+		$("input[type='radio'][name='thirdfirstRadio']").change(function() {
+			idParagraphThirdOne.text(contentValue3[0]);
+			idParagraphThirdTwo.text("");
+			idRadioThirdSecond.prop('checked', false);
+			$(this).off('click');
+
+		});
+
+		$("input[type='radio'][name='thirdSecondRadio']").change(function() {
+			idParagraphThirdTwo.text(contentValue3[1]);
+			idParagraphThirdOne.text("");
+			idRadioThirdFirst.prop('checked', false);
+			$(this).off('click');
+		});		
+
+
+		$("input[type='radio'][name='fourthfirstRadio']").change(function() {
+			idParagraphFourthOne.text(contentValue4[0]);
+			idParagraphFourthTwo.text("");
+			idRadioFourthSecond.prop('checked', false);
+			$(this).off('click');
+
+		});
+
+		$("input[type='radio'][name='fourthSecondRadio']").change(function() {
+			idParagraphFourthTwo.text(contentValue4[1]);
+			idParagraphFourthOne.text("");
+			idRadioFourthFirst.prop('checked', false);
+			$(this).off('click');
+		});
+
+		$("input[type='submit']").click(function() {
+
+			var selectedRadioItemOneOfOneOption = $("input[type='radio'][name='firstRadio']:checked").val();
+			var selectedRadioItemOneOfTwoOption = $("input[type='radio'][name='secondRadio']:checked").val();
+
+			var selectedRadioItemTwoOfOneOption = $("input[type='radio'][name='secondfirstRadio']:checked").val();
+			var selectedRadioItemTwoOfTwoOption = $("input[type='radio'][name='secondSecondRadio']:checked").val();
+
+			var selectedRadioItemThreeOfOneOption = $("input[type='radio'][name='thirdfirstRadio']:checked").val();
+			var selectedRadioItemThreeOfTwoOption = $("input[type='radio'][name='thirdSecondRadio']:checked").val();
+
+			var selectedRadioItemFourOfOneOption = $("input[type='radio'][name='fourthfirstRadio']:checked").val();
+			var selectedRadioItemFourOfTwoOption = $("input[type='radio'][name='fourthSecondRadio']:checked").val();
+
+
+
+			var arrSelectedRadio = [
+				selectedRadioItemOneOfOneOption,
+				selectedRadioItemOneOfTwoOption,
+				selectedRadioItemTwoOfOneOption,
+				selectedRadioItemTwoOfTwoOption,
+				selectedRadioItemThreeOfOneOption,
+				selectedRadioItemThreeOfTwoOption,
+				selectedRadioItemFourOfOneOption,
+				selectedRadioItemFourOfTwoOption
+			];
+
+
+			if(arrSelectedRadio[0] && arrSelectedRadio[3] && arrSelectedRadio[4] && arrSelectedRadio[7]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[2] && arrSelectedRadio[5] && arrSelectedRadio[6]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[0] && arrSelectedRadio[2] && arrSelectedRadio[4] && arrSelectedRadio[7]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[3] && arrSelectedRadio[5] && arrSelectedRadio[6]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[0] && arrSelectedRadio[2] && arrSelectedRadio[5] && arrSelectedRadio[7]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[2] && arrSelectedRadio[4] && arrSelectedRadio[6]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[0] && arrSelectedRadio[3] && arrSelectedRadio[5] && arrSelectedRadio[7]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[2] && arrSelectedRadio[4] && arrSelectedRadio[7]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[0] && arrSelectedRadio[3] && arrSelectedRadio[5] && arrSelectedRadio[6]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[3] && arrSelectedRadio[4] && arrSelectedRadio[6]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[2] && arrSelectedRadio[5] && arrSelectedRadio[7]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[0] && arrSelectedRadio[3] && arrSelectedRadio[4] && arrSelectedRadio[6]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[0] && arrSelectedRadio[2] && arrSelectedRadio[5] && arrSelectedRadio[6]) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(arrSelectedRadio[1] && arrSelectedRadio[3] && arrSelectedRadio[4] && arrSelectedRadio[7]) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(selectedRadioItemOneOfOneOption && selectedRadioItemTwoOfOneOption && selectedRadioItemThreeOfOneOption && selectedRadioItemFourOfOneOption) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondOne.text() + " " + idParagraphThirdOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+
+			} else if(selectedRadioItemOneOfTwoOption && selectedRadioItemTwoOfTwoOption && selectedRadioItemThreeOfTwoOption && selectedRadioItemFourOfTwoOption) {
+				alert(idParagraphTwo.text() + " " + idParagraphSecondTwo.text() + " " + idParagraphThirdTwo.text() + " " + idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+
+			} else if(selectedRadioItemOneOfOneOption && selectedRadioItemTwoOfOneOption) {
+				alert(idParagraphOne.text() + " " + idParagraphSecondOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemOneOfOneOption && selectedRadioItemThreeOfOneOption) {
+				alert(idParagraphOne.text() + " " + idParagraphThirdOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemTwoOfOneOption && selectedRadioItemThreeOfOneOption) {
+				alert(idParagraphSecondOne.text() + " " + idParagraphThirdOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemTwoOfOneOption && selectedRadioItemFourOfOneOption) {
+				alert(idParagraphSecondOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemThreeOfOneOption && selectedRadioItemFourOfOneOption) {
+				alert(idParagraphThirdOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemOneOfOneOption && selectedRadioItemFourOfOneOption) {
+				alert(idParagraphOne.text() + " " + idParagraphFourthOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemOneOfOneOption) {
+				alert(idParagraphOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemOneOfTwoOption) {
+				alert(idParagraphTwo.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemTwoOfOneOption) {
+				alert(idParagraphSecondOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemTwoOfTwoOption) {
+				alert(idParagraphSecondTwo.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemThreeOfOneOption) {
+				alert(idParagraphThirdOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemThreeOfTwoOption) {
+				alert(idParagraphThirdTwo.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemFourOfOneOption) {
+				alert(idParagraphFourthOne.text());
+				window.location.href = "index.html";
+			} else if(selectedRadioItemFourOfTwoOption) {
+				alert(idParagraphFourthTwo.text());
+				window.location.href = "index.html";
+			}
+
+
+		});
+
+	});
+
+	function rotateAnimation(inDegreeOfRotation) {
+		var elementToRotate = $("#idSpanIcon");
+		$({deg: 0}).animate({deg: inDegreeOfRotation}, {
+			duration: 1000,
+			step: function(fullComboRotationDegree) {
+				elementToRotate.css({
+					transform: "rotate(" + fullComboRotationDegree + "deg)"
+				});
+			}
+		});
+	}
+
+
+</script>
+</body>
+</html>
